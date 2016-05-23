@@ -7,7 +7,6 @@ import {
   getInnerHTML,
   expectInputAttribute,
   expectInputHTML,
-  getSuggestionsContainer,
   getSuggestion,
   expectSuggestions,
   expectFocusedSuggestion,
@@ -30,7 +29,6 @@ import AutosuggestApp, {
   renderInput,
   onChange,
   onBlur,
-  shouldRenderSuggestions,
   onSuggestionSelected
 } from './AutosuggestApp';
 
