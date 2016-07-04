@@ -88,9 +88,9 @@ class Autosuggest extends Component {
   }
 
   componentDidMount() {
-    global.window.addEventListener('touchstart', this.onDocumentTouchStart, false);
-    global.window.addEventListener('touchend', this.onDocumentTouchEnd, false);
-    global.window.addEventListener('mouseup', this.onDocumentMouseUp, false);
+    global.document.addEventListener('touchstart', this.onDocumentTouchStart, false);
+    global.document.addEventListener('touchend', this.onDocumentTouchEnd, false);
+    global.document.addEventListener('mouseup', this.onDocumentMouseUp, false);
   }
 
   componentWillReceiveProps(nextProps) {
