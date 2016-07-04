@@ -107,9 +107,9 @@ class Autosuggest extends Component {
   }
 
   componentWillUnmount() {
-    global.window.removeEventListener('touchstart', this.onDocumentTouchStart, false);
-    global.window.removeEventListener('touchend', this.onDocumentTouchEnd, false);
-    global.window.removeEventListener('mouseup', this.onDocumentMouseUp, false);
+    global.document.removeEventListener('touchstart', this.onDocumentTouchStart, false);
+    global.document.removeEventListener('touchend', this.onDocumentTouchEnd, false);
+    global.document.removeEventListener('mouseup', this.onDocumentMouseUp, false);
   }
 
   onDocumentTouchStart(event) {
