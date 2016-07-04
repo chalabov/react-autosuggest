@@ -23,7 +23,7 @@
     "prepublish": "npm run dist && npm run standalone"
   },
   "dependencies": {
-    "react-autowhatever": "git://github.com/packetloop/react-autowhatever#dist",
+    "@packetloop/react-autowhatever": "3",
     "react-redux": "^4.4.5",
     "redux": "^3.5.1"
   },
